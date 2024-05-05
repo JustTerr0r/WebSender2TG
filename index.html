@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>TypeScript Hello World</title>
+  <title>Hello World</title>
   <style>
-    /* Добавим стили для фона тут */
     body {
-      background-color: red; /* Устанавливаем красный фон для тела документа */
+      background-color: rgb(182, 178, 178); /* Устанавливаем серый фон сайта */
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; /* Элементы будут стоять в колонну (сверху вниз) */
+    }
+    label {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      height: 1cm; /* Высота поля для ввода */
+      width: 200px; /* Длина поля для ввода */
+      line-height: 1cm; /* Высота строки поля для ввода */
+    }
+    button {
+      height: 1cm; /* Высота кнопки, чтобы соответствовать полю для ввода */
+      margin-left: 5px; /* Отступ кнопки от поля для ввода */
+    }
+    .input-group {
+      display: flex;
+      align-items: center;
     }
   </style>
 </head>
 <body>
-  <script src="dist/index.js"></script>
+  <label for="message-input">ВВЕДИТЕ СООБЩЕНИЕ</label>
+  <div class="input-group">
+    <input type="text" id="message-input">
+    <button type="button">Отправить</button>
+  </div>
 </body>
 </html>
