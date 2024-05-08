@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(51, 51, 51); /* Устанавливаем серый фон сайта */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Элементы будут стоять в колонну (сверху вниз) */
+  }
+  label {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  input[type="text"] {
+    height: 1cm; /* Высота поля для ввода */
+    width: 200px; /* Длина поля для ввода */
+    line-height: 1cm; /* Высота строки поля для ввода */
+    border-radius: 10px;
+  }
+  button {
+    height: 1cm; /* Высота кнопки, чтобы соответствовать полю для ввода */
+    margin-left: 15px; /* Отступ кнопки от поля для ввода */
+    border-radius: 7px;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+  }

@@ -2,41 +2,16 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
-  <style>
-    body {
-      background-color: rgb(182, 178, 178); /* Устанавливаем серый фон сайта */
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column; /* Элементы будут стоять в колонну (сверху вниз) */
-    }
-    label {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-    }
-    input[type="text"] {
-      height: 1cm; /* Высота поля для ввода */
-      width: 200px; /* Длина поля для ввода */
-      line-height: 1cm; /* Высота строки поля для ввода */
-    }
-    button {
-      height: 1cm; /* Высота кнопки, чтобы соответствовать полю для ввода */
-      margin-left: 5px; /* Отступ кнопки от поля для ввода */
-    }
-    .input-group {
-      display: flex;
-      align-items: center;
-    }
-  </style>
+  <title>TG4MONYA</title>
+  <meta name="description" content="Предлагаю вам отправить сообщение в телеграм">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-  <label for="message-input">ВВЕДИТЕ СООБЩЕНИЕ</label>
+  <label for="message-input" id="myLabel">ВВЕДИТЕ СООБЩЕНИЕ</label>
   <div class="input-group">
-    <input type="text" id="message-input">
-    <button type="button">Отправить</button>
+    <input type="text" id="message-input" placeholder="Введите сообщение">
+    <button type="button" id="myButton">Отправить</button>
   </div>
 </body>
 </html>
